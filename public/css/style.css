@@ -1,0 +1,415 @@
+/*******************style du blog**********************/
+
+					/*gÃƒÂ©nÃƒÂ©ralitÃƒÂ©s du site*/
+
+html{
+	background: url("../../public/images/alaska3.jpg") repeat-y;
+	background-size: contain;
+	font-family: "source";
+	background-color: #0c3b4a;
+} 
+
+body{
+	margin: 0;
+	text-align: center;
+	background-color: #ffffff78;
+}
+
+h1{
+	font-size: 4rem;
+	font-family: cursive;
+	color: #0f2b4e;
+}
+
+h2{
+	font-size: 2rem;
+	color: #0f2b4e;
+	margin-top: 0;
+}
+
+.slider{
+	width: 100%;
+	height: 20rem;
+}
+
+.titre1{
+	padding-top: 7rem;
+}
+
+.button {
+    background-color: #284365;
+    margin: auto;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding-top: 0.7rem;
+    width: 200px;
+    height: 30px;
+    font-weight: bold;
+}
+
+.button:hover{
+ 	background-color: #4d81c3; 
+ 	cursor: pointer;
+}
+
+.button a{
+    color: white;
+    text-decoration: none;
+}
+
+.buttonform{
+	padding-bottom: 1.7rem;
+}
+
+.section{
+	margin: 70px;
+	padding: 80px 100px;
+	background-color: #fff;
+}
+
+
+					/* layout site - menu et logo*/
+
+.entete{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	color: #fff;
+	position: fixed;
+	z-index: 100;
+	background-color: #284365;
+	top: 0;
+}
+
+#logo{
+    margin: auto 1rem;
+}
+
+#menu{
+	display: flex;
+	align-items: center;
+	font-weight: 600;
+	margin-right: 0.5rem;
+}
+
+.menu{
+	list-style-type: none;
+	margin: auto 0.5rem;
+	padding: 3px 0;
+}
+
+.menu:hover{
+ 	border-bottom: 2px solid white;
+ 	padding-bottom: 0;
+ 	cursor: pointer;
+}
+
+.menu a{
+	text-decoration: none;
+	color: white;
+}
+
+	
+					/* layout site -- footer*/
+
+#footer{
+	background-color: #fff;
+	padding: 0.5rem;
+	margin-top: 2rem;
+	width: 100%;
+	bottom: 0;
+}
+
+					/* layout du dashboard*/
+
+.fonddashboard{
+	background: #54728c;
+}
+
+
+
+					/*page blog_home -- synopsis*/
+
+.sliderhome{
+	width: 100%;
+	height: 40rem;
+}
+
+.homesection1{
+	display: flex;
+	width: 100%;
+	height: 25rem; 
+	justify-content: space-around;
+	padding: 3rem 0 8rem 0;
+	background-color: #fff;
+
+}
+.imagejean{
+	width: 250px;
+	height: 350px;
+	margin: 2rem 1rem 8rem 7rem;
+	border: 3px solid #5aa8d0;
+}
+
+.textsection{ 
+	margin: 2rem 5rem; 
+}
+
+					/*page blog_home -- autres romans*/
+
+.homesection2{
+	width: 100%;
+	height: 35rem; 
+	padding-top: 3rem;
+}
+
+.livresection{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 2rem;
+
+}
+
+.livre{
+	width: 15rem;
+}
+
+					/*page biographie*/
+
+.sectionbio{
+	margin: 0px 200px;
+}
+
+.imagejeanbio{
+    margin: inherit;
+    margin: 0 5rem;
+}
+
+.descriptionbio{
+	background-color: #fff;
+	padding: 30px;
+}
+
+.bio{
+	display: flex;
+}
+					/*page book */
+
+
+.ticket{
+	margin: 0px 200px;
+	background-color: #fff;
+	padding: 50px 60px;
+	border-top: 1px solid #284365;
+}
+
+					/*page commentaires*/
+
+.ticketcomment{
+	border-top: none;
+	margin-bottom: 2rem;
+}
+
+.comments{
+	margin: auto;
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+}
+
+.comment{
+	border-top: 1px solid #284365;
+}
+
+.reported{
+	background-color: #284365;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 25px;
+}
+
+.reported:hover{
+ 	background-color: #b91616;
+    cursor: pointer;
+}
+
+.formulaire{
+	width: 35rem;
+	background-color: #fff;
+	margin: auto;
+	padding: 2rem;
+	margin-top: 4rem;
+}
+
+.pseudo{
+ 	border: 1px solid #284365;
+    border-radius: 8px;
+    width: 25rem;
+    height: 1.5rem;
+    font-weight: bold;
+    padding-left: 1rem;
+}
+
+input:focus, textarea:focus {
+	outline: 0;
+}
+
+.texte{
+	border: 1px solid #284365;
+    border-radius: 10px;
+    width: 25rem;
+    padding-left: 1rem;
+    }
+
+					/*dashboard home*/
+
+.sectionadmin{
+	height: 600px;	
+}
+
+.titreadmin{
+	padding-top: 150px;	
+}
+
+.menuadmin{
+	display: flex;
+	justify-content: center;
+}
+
+.buttonsdash{
+	display: flex;
+	padding: 2rem 10rem;
+}
+
+.buttonadmin{
+	background-color: #284365;
+    color: white;
+    padding-top: 3.5rem;
+    border: none;
+    border-radius: 10px;
+    width: 20rem;
+    height: 5rem;
+    margin: 20px 50px;
+    font-weight: bold;	
+}
+
+.buttonadmin:hover{
+ 	background-color: #6385af;
+}
+
+.buttonadmin a{
+    color: white;
+    text-decoration: none;
+}
+
+#retour{
+	margin-top: 30px;
+}
+
+.formtiny{
+	width: 70%;
+	margin: auto;
+	height: 35rem;
+}
+
+
+@media screen and (max-width: 500px){
+	
+	.entete{
+		display: flex;
+        flex-direction: column;
+	}
+	
+	h1{
+	font-size: 2.5rem;
+	}
+
+	h2{
+		font-size: 1.5rem;
+	}
+	
+	.sliderhome{
+	height: 35rem;
+    }
+
+    .homesection1{
+	height: 30rem; 
+	}
+
+	.imagejean{
+		display: none;
+	}
+
+	.textsection{ 
+	margin: 2rem 1rem; 
+    }
+    
+    .homesection2{
+	width: 100%;
+	height: 45rem; 
+	padding-top: 3rem;
+    }
+
+	.livresection{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.livre{
+		width: 10rem;
+		margin: 1rem;
+	}
+
+	.ticket {
+    margin: 0px 20px;
+	}
+
+	
+	.formulaire {
+    width: 15rem;
+    }
+
+    .pseudo{
+    width: 13rem;
+    }
+
+    .texte{
+    width: 13rem;
+    }
+
+	.sectionadmin {
+    height: 900px;
+    }
+
+    .menuadmin {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.buttonsdash {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0;
+	}
+
+	.button{
+		margin-bottom: 0.5rem
+	}
+
+	.titre1{
+	padding-top: 9rem;
+    }
+
+
+
+
+
+
+
+
+}

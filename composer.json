@@ -1,0 +1,15 @@
+{
+    "name": "rudyp/projet4",
+    "authors": [
+        {
+            "name": "Rudy Pohu",
+            "email": "test@test.fr"
+        }
+    ],
+    "autoload": {
+    	"psr-4": {
+    		"Model\\":"model/",
+    		"Controller\\":"controller/"
+    	}
+    }
+}
