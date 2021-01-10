@@ -9,6 +9,7 @@
 
     <?php
     foreach($tickets as $ticket):
+        $content = preg_replace('#<script(.*?)>(.*?)</script>#is', '',$ticket->contenu());
     ?>
     
         <div class="ticket">     
@@ -17,7 +18,7 @@
                 <em>le <?php echo $ticket->getDate(); ?></em>
             </h2> 
             <p>
-                <?php echo htmlspecialchars($ticket->contenu()); ?>
+                <?php echo $content; ?>
             </p> 
             
             <div class="buttonsdash">
