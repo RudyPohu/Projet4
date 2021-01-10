@@ -3,10 +3,14 @@
 
        
 <!-- le titre -->   
-            <div class="sliderhome">
-                <h1 class="titre1">Entrer vos identifiants de connexion: </h1>
-				<div>
-					<form action="index.php?action=connexion" method="post">
+            <div>
+                <h2 class="titre1">Entrer vos identifiants de connexion: </h2>
+			</div>	
+
+            <section class="homesection2">
+                
+                <div class="formulaire">
+    				<form action="index.php?action=connexion" method="post">
                         <?php
                         if(isset($_SESSION['errors'])) 
                         {
@@ -19,12 +23,12 @@
                         <input type="text" name="pseudo" class="pseudo">
                         <br /><br />
                         <h2>Votre mot de passe:</h2> 
-						<input type="password" name="pass" class="pseudo">
-                        <br /><br />
-						<input class="button buttonform" type="submit" value="valider">
-					</form>		
-				</div>
-			</div>
+    					<input type="password" name="pass" class="pseudo">
+                        <br /><br /><br />
+    					<input class="button buttonform" type="submit" value="valider">
+    				</form>		
+    			</div>
+			</section>
 		
 	
 <?php

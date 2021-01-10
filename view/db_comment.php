@@ -19,7 +19,7 @@
     
         <div class="buttonsdash">
             <div class="button"> <a href="index.php?action=unreport&id=<?= $comment->id() ?>">Valider</a></div>
-            <div class="button"> <a onclick="return confirm('Etes vous sur ?')" href="index.php?action=deleteReport&id=<?= $comment->id() ?> ">Supprimer</a></div>        
+            <div class="button"> <a onclick="return confirm('Etes vous sur de vouloir supprimer ce commentaire ?')" href="index.php?action=deleteReport&id=<?= $comment->id() ?> ">Supprimer</a></div>        
         </div>
 
 
