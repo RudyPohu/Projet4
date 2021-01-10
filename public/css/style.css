@@ -326,7 +326,7 @@ input:focus, textarea:focus {
 	}
 	
 	h1{
-	font-size: 2.5rem;
+		font-size: 2.5rem;
 	}
 
 	h2{
@@ -334,11 +334,11 @@ input:focus, textarea:focus {
 	}
 	
 	.sliderhome{
-	height: 35rem;
+		height: 35rem;
     }
 
     .homesection1{
-	height: 30rem; 
+		height: 30rem; 
 	}
 
 	.imagejean{
@@ -346,13 +346,13 @@ input:focus, textarea:focus {
 	}
 
 	.textsection{ 
-	margin: 2rem 1rem; 
+		margin: 2rem 1rem; 
     }
     
     .homesection2{
-	width: 100%;
-	height: 45rem; 
-	padding-top: 3rem;
+		width: 100%;
+		height: 45rem; 
+		padding-top: 3rem;
     }
 
 	.livresection{
@@ -366,24 +366,27 @@ input:focus, textarea:focus {
 	}
 
 	.ticket {
-    margin: 0px 20px;
+    	margin: 0px 20px;
 	}
-
 	
 	.formulaire {
-    width: 15rem;
+    	width: 15rem;
     }
 
     .pseudo{
-    width: 13rem;
+    	width: 13rem;
     }
 
     .texte{
-    width: 13rem;
+    	width: 13rem;
     }
 
+	.sectionbio {
+    	margin: 0px 50px;
+	}
+
 	.sectionadmin {
-    height: 900px;
+   		height: 900px;
     }
 
     .menuadmin {
@@ -392,24 +395,49 @@ input:focus, textarea:focus {
 	}
 
 	.buttonsdash {
-    display: flex;
-    flex-direction: column;
-    padding: 0 0;
+    	display: flex;
+    	flex-direction: column;
+    	padding: 0 0;
 	}
 
 	.button{
-		margin-bottom: 0.5rem
+		margin-bottom: 0.5rem;
+		margin: auto;
 	}
 
 	.titre1{
-	padding-top: 9rem;
+		padding-top: 9rem;
     }
+}
 
 
+@media screen and (max-width: 900px) {
 
+	.imagejean{
+		display: none;
+	}
 
+	.livre{
+		width: 10rem;
+		margin: 1rem;
+	}
 
+	.sectionbio {
+		margin: 0px 50px;
+	}
 
+	.bio{
+		display: none;
+	}
+
+	.ticket {
+    	margin: 0px 60px;
+	}
+
+	.button{
+		margin: auto;
+		margin-left: 5px;
+	}
 
 
 }
