@@ -2,8 +2,8 @@
 
 namespace Model;
 
-class AuthManager
-{
+class AuthManager{
+   
     private $_db;
   
     // fonction permettant de se connecter à la BDD

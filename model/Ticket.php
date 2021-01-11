@@ -4,8 +4,7 @@ namespace Model;
 
 // use Model\{frontController,TicketManager};
 
-class Ticket 
-{
+class Ticket {
 	private $_id;
 	private $_titre;
 	private $_contenu;

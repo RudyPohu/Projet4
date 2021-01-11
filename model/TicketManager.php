@@ -2,22 +2,14 @@
 
 namespace Model;
 
-use Model\Ticket;
+require 'AccessBDD.php';
+
+use Model\{Ticket, Bdd};
 
 class TicketManager
-{
+ {
 
-	private $_db;
 
-    // fonction permettant de se connecter à la BDD
-    private function getBDD() {
-    	try {
-	        $this->_db = new \PDO('mysql:host=localhost;dbname=projet4;charset=utf8', 'root', '');
-	    }
-	    catch(\Exception $e) {
-            die('Erreur : '.$e->getMessage());
-	    }
-    }
    
     // fonction permettant l'affichage des chapitres, limite de 10
 	public function getTickets() {
