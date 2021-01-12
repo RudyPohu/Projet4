@@ -5,6 +5,9 @@ $action = $_GET['action'] ?? 'index';
 
 require '../vendor/autoload.php';
 
+$dotenv = Dotenv\Dotenv::createImmutable("../");
+$dotenv->load();
+
 use Controller\{frontController, AuthController, CommentController, DashboardController};
 
 switch($action) {
