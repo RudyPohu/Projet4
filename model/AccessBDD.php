@@ -2,12 +2,12 @@
 
 namespace Model;
 
-class Bdd {
+abstract class AccessBdd {
 
     protected $_db;
 
     // fonction permettant de se connecter à la BDD
-    public function getBDD() {
+    protected function getBDD() {
         try {
             $this->_db = new \PDO('mysql:host=localhost;dbname=projet4;charset=utf8', 'root', '');
         }
