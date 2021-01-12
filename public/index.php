@@ -7,8 +7,8 @@ require '../vendor/autoload.php';
 
 use Controller\{frontController, AuthController, CommentController, DashboardController};
 
-switch($action) 
-{
+switch($action) {
+	
 	case 'index':
 		$controller = new frontController();
 		$controller->index();

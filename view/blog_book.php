@@ -1,4 +1,4 @@
-<?php $title = "Roman"; ?>
+<?php $title = "Chapitres du livre"; ?>
 <?php ob_start(); ?>
 
 
@@ -13,7 +13,6 @@
     ?>
     
     <div class="ticket">
-        
         <h2>
             <?php echo htmlspecialchars($ticket->titre()); ?>
             <br /><em>Publié le <?php echo $ticket->getDate(); ?></em>

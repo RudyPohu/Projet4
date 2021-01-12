@@ -4,8 +4,8 @@ namespace Controller;
 
 use Model\{TicketManager, CommentManager};
 
-class DashboardController
-{
+class DashboardController {
+    
     //appel à la fonction d'affichage des chapitres dans la page db_post du dashboard, condition de connexion
     public function listPosts() {
 		if(isset($_SESSION['id'])) {

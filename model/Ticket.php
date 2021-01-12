@@ -2,14 +2,12 @@
 
 namespace Model;
 
-// use Model\{frontController,TicketManager};
-
 class Ticket {
+	
 	private $_id;
 	private $_titre;
 	private $_contenu;
 	private $_date;
-
 
 	public function __construct(array $datas) {
 		foreach($datas as $key =>$data) {
@@ -19,26 +17,23 @@ class Ticket {
 	}
 
 	// guetteurs
-	public function id()
-	{
+	public function id() {
 		return $this->_id;
 	}
 
-	public function titre()
-	{
+	public function titre()	{
 		return $this->_titre;
 	}
 
-	public function contenu()
-	{
+	public function contenu() {
 		return $this->_contenu;
 	}
 
-	public function getDate()
-	{
+	public function getDate() {
 		return $this->_date;
 	}
 
+	//setteurs
 	public function setId(int $id) {
 		$this->_id = $id;
 	}

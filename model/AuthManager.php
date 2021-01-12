@@ -2,7 +2,7 @@
 
 namespace Model;
 
-class AuthManager{
+class AuthManager {
    
     private $_db;
   

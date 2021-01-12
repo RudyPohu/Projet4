@@ -3,6 +3,7 @@
 namespace Model;
 
 class Comment {
+	
 	private $_id;
 	private $_id_ticket;
 	private $_auteur;

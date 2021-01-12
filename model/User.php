@@ -2,37 +2,28 @@
 
 namespace Model;
 
-// use Model\{frontController,TicketManager};
-
-class User 
-{
+class User {
+	
 	private $_id;
 	private $_pseudo;
 	private $_pass;
 
-	public function __construct(array $datas) 
-	{
-		foreach($datas as $key =>$data) 
-		{
+	public function __construct(array $datas) {
+		foreach($datas as $key =>$data) {
 			$method = 'set'.ucfirst($key);	
 			$this->$method($data); 
 		}
-	
 	}
 
-
-	public function id()
-	{
+	public function id() {
 		return $this->_id;
 	}
 
-	public function pseudo()
-	{
+	public function pseudo() {
 		return $this->_pseudo;
 	}
 
-	public function pass()
-	{
+	public function pass() {
 		return $this->_pass;
 	}
 

@@ -4,8 +4,8 @@ namespace Controller;
 
 use Model\AuthManager;
 
-class AuthController
-{
+class AuthController {
+    
     // verification des éléments de connexion au dashboard, appel à la fonction getUser permettant de récupérer les éléments en BDD, comparaison des éléments, redirection
     public function connexion()	{
 		$errors = 0;

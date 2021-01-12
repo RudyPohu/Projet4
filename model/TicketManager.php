@@ -6,16 +6,14 @@ require 'AccessBDD.php';
 
 use Model\{Ticket, Bdd};
 
-class TicketManager
- {
-
-
-   
-    // fonction permettant l'affichage des chapitres, limite de 10
+class TicketManager extends Bdd {
+	
+	 // fonction permettant l'affichage des chapitres, limite de 10
 	public function getTickets() {
-		$this->getBDD();
+		$bdd = new Bdd($_db);
+		$bdd->getBDD();
 		$datas = [];
-		$q = $this->_db->query('SELECT id, titre, contenu, DATE_FORMAT(date_creation, \'%d/%m/%Y\') AS date FROM tickets ORDER BY date_creation LIMIT 0, 10');
+		$q = $this->_bd->query('SELECT id, titre, contenu, DATE_FORMAT(date_creation, \'%d/%m/%Y\') AS date FROM tickets ORDER BY date_creation LIMIT 0, 10');
 		$tickets = $q->fetchAll(\PDO::FETCH_ASSOC);
 		$q->closeCursor();
 		foreach($tickets as $ticket) {

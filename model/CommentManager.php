@@ -2,8 +2,7 @@
 
 namespace Model;
 
-class CommentManager
-{
+class CommentManager {
 
 	private $_db;
   

@@ -10,35 +10,15 @@
         <!-- TinyMCE -->
         <script type="text/javascript" src="js/tinymce/tinymce.min.js"></script>
         <script type="text/javascript">
-
           tinymce.init({
             selector : "#tiny"
-            // // type de mode
-            // mode : "exact", 
-            // // id ou class, des textareas appelés
-            // elements : "tiny", 
-            // // en mode avancé, cela permet de choisir les plugins
-            // theme : "advanced", 
-            // // langue
-            // language : "fr", 
-            // // liste des plugins
-            // theme_advanced_toolbar_location : "top",
-            // theme_advanced_buttons1 : "bold,italic,underline,strikethrough,sup,forecolor,separator,"
-            // + "justifyleft,justifycenter,justifyright,justifyfull,formatselect,"
-            // + "bullist,numlist,outdent,indent,separator,cleanup,|,undo,redo,|,",
-            // theme_advanced_buttons2 : "",
-            // theme_advanced_buttons3 : "",
-            // height:"250px",
-            // width:"500px"
           });
 
         </script>
     </head>
 
     <body>
-        
         <header>
-             
 <!--le logo-->           
             <div class=entete>
                 <div id="logo">

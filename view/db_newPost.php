@@ -1,4 +1,4 @@
-<?php $title = "dashboard"; ?>
+<?php $title = "Nouveau chapitre"; ?>
 <?php ob_start(); ?>
 
 <div>
@@ -6,7 +6,6 @@
 </div>
 
 <section>
-
     <form action="index.php?action=storeTicket" method="post" class="formtiny" >
         <label for="titre">Titre du chapitre:</label><br />
         <input class="pseudo" type="text" name="titre" /><br /><br />
@@ -15,12 +14,8 @@
         <input class="button buttonform" type="submit" value="Envoyer" />
 	</form> 
 
-    <div id="retour" class="button"><a href="index.php?action=dashboard" title="aller à la page connexion">Annuler</a></div>
-
-    
+    <div id="retour" class="button"><a href="index.php?action=dashboard" title="aller à la page connexion">Annuler</a></div>  
 </section>
-
-
 
 <?php
 $content = ob_get_clean();

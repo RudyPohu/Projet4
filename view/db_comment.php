@@ -1,4 +1,4 @@
-<?php $title = "dashboard"; ?>
+<?php $title = "Liste des commentaires signalés"; ?>
 <?php ob_start(); ?>
  
 <div>
@@ -6,7 +6,6 @@
 </div>
 
 <section class="comments">
-    
     <?php
     foreach($comments as $comment):
     ?>
@@ -21,8 +20,6 @@
             <div class="button"> <a href="index.php?action=unreport&id=<?= $comment->id() ?>">Valider</a></div>
             <div class="button"> <a onclick="return confirm('Etes vous sur de vouloir supprimer ce commentaire ?')" href="index.php?action=deleteReport&id=<?= $comment->id() ?> ">Supprimer</a></div>        
         </div>
-
-
     </div>
 
     <?php
@@ -30,7 +27,7 @@
     ?>
 </section>
     
-    <div id="retour" class="button"> <a href="index.php?action=dashboard" title="aller à la page connexion">Revenir au tableau de bord</a></div>
+<div id="retour" class="button"> <a href="index.php?action=dashboard" title="aller à la page connexion">Revenir au tableau de bord</a></div>
  
 <?php
 $content = ob_get_clean();

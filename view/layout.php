@@ -10,7 +10,6 @@
     </head>
 
     <body>
-        
         <header>
              
 <!--le logo-->           
@@ -42,29 +41,12 @@
             </div>
         </header> 
 
-
         <div>
             <?= $content ?>
         </div>
 
-
-        <footer id="footer">
-<!--             </div class="footermenu">
-
-                <h2>Plan du site:</h2>
-                <nav>
-                    <ul>
-                        <li><a href="index.php" title="revenir à l'accueil">Accueil</a></li>
-                        <li><a href="index.php?action=biography" title="biographie">Biographie</a></li>
-                        <li><a href="index.php?action=book" title="Roman">Le livre</a></li>
-                        <li><a href="index.php?action=connexion" title="aller à la page connexion">Connexion</a></li>
-                    </ul>
-                </nav>
-            </div> -->
-            
-                <p>Copyright Rudy POHU - Etudiant chez OpenClassrooms - 2020</p>
-            
-            
+        <footer id="footer">            
+            <p>Copyright Rudy POHU - Etudiant chez OpenClassrooms - 2020</p>    
         </footer>
 
 	</body>

@@ -1,4 +1,4 @@
-<?php $title = "dashboard"; ?>
+<?php $title = "Suppression d'un chapitre"; ?>
 <?php ob_start(); ?>
 
 <div>
@@ -16,12 +16,11 @@
         </p>    
     </div>
 </section>
+
 <section>
-	
 	<div id="retour" class="button"> <a onclick="return confirm('Etes vous sur de vouloir supprimer ce chapitre ?')" href="index.php?action=delete&ticket_id=<?= $ticket->id() ?>" title="supprimer le chapitre">Confirmer</a></div>
 	<br />
-    <div id="retour" class="button"> <a href="index.php?action=dashboard" title="aller à la page connexion">Annuler</a></div>
-     
+    <div id="retour" class="button"> <a href="index.php?action=dashboard" title="aller à la page connexion">Annuler</a></div>  
 </section>
 
 

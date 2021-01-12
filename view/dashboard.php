@@ -1,4 +1,4 @@
-<?php $title = "dashboard"; ?>
+<?php $title = "Tableau de bord"; ?>
 <?php ob_start(); ?>
 
        
@@ -9,6 +9,7 @@
         <div class="buttonadmin"> <a href="index.php?action=listPosts ">Accéder aux chapitres</a></div>
         <div class="buttonadmin"> <a href="index.php?action=listComments ">Accéder aux commentaires signalés</a></div>
     </div>
+
     <div class="menuadmin">
         <div class="buttonadmin"> <a href="index.php?action=newPost ">Ajouter un nouveau chapitre</a></div>
         <div class="buttonadmin"> <a href="index.php?action=deconnexion ">Me déconnecter</a></div>
