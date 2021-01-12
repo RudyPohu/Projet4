@@ -11,5 +11,8 @@
     		"Model\\":"model/",
     		"Controller\\":"controller/"
     	}
+    },
+    "require": {
+        "vlucas/phpdotenv": "^4.1"
     }
 }
