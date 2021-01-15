@@ -16,9 +16,9 @@
         <p>Date de publication : <?php echo ($comment->getDate()); ?></p>   
         <p>Commentaire: <?php echo nl2br(htmlspecialchars($comment->commentaire())); ?></p>
     
-        <div class="buttonsdash">
-            <div class="button"> <a href="index.php?action=unreport&id=<?= $comment->id() ?>">Valider</a></div>
-            <div class="button"> <a onclick="return confirm('Etes vous sur de vouloir supprimer ce commentaire ?')" href="index.php?action=deleteReport&id=<?= $comment->id() ?> ">Supprimer</a></div>        
+        <div class="buttonsdash ajustbuttonsdash">
+            <div class="button ajutbutton"> <a href="index.php?action=unreport&id=<?= $comment->id() ?>">Valider</a></div>
+            <div class="button ajutbutton"> <a onclick="return confirm('Etes vous sur de vouloir supprimer ce commentaire ?')" href="index.php?action=deleteReport&id=<?= $comment->id() ?> ">Supprimer</a></div>        
         </div>
     </div>
 

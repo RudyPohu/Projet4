@@ -317,6 +317,34 @@ input:focus, textarea:focus {
 	height: 35rem;
 }
 
+@media screen and (max-width: 900px) {
+
+	.imagejean{
+		display: none;
+	}
+
+	.livre{
+		width: 10rem;
+		margin: 1rem;
+	}
+
+	.sectionbio {
+		margin: 0px 50px;
+	}
+
+	.bio{
+		display: none;
+	}
+
+	.ticket {
+    	margin: 0px 60px;
+	}
+    
+	.ajustbuttonsdash {
+    	padding: 2rem 0;
+	}
+
+}
 
 @media screen and (max-width: 500px){
 	
@@ -395,49 +423,15 @@ input:focus, textarea:focus {
 	}
 
 	.buttonsdash {
-    	display: flex;
     	flex-direction: column;
-    	padding: 0 0;
-	}
-
-	.button{
-		margin-bottom: 0.5rem;
-		margin: auto;
 	}
 
 	.titre1{
 		padding-top: 9rem;
     }
-}
 
-
-@media screen and (max-width: 900px) {
-
-	.imagejean{
-		display: none;
-	}
-
-	.livre{
-		width: 10rem;
-		margin: 1rem;
-	}
-
-	.sectionbio {
-		margin: 0px 50px;
-	}
-
-	.bio{
-		display: none;
-	}
-
-	.ticket {
-    	margin: 0px 60px;
-	}
-
-	.button{
-		margin: auto;
-		margin-left: 5px;
-	}
-
+    .ajutbutton{
+    	margin-bottom: 5px;
+    }
 
 }

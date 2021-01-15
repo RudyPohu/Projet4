@@ -16,7 +16,7 @@ class Ticket {
 		}
 	}
 
-	// guetteurs
+	// getters
 	public function id() {
 		return $this->_id;
 	}
@@ -33,7 +33,7 @@ class Ticket {
 		return $this->_date;
 	}
 
-	//setteurs
+	//setters
 	public function setId(int $id) {
 		$this->_id = $id;
 	}

@@ -19,9 +19,9 @@
             <?php echo $content; ?>
         </p> 
         
-        <div class="buttonsdash">
-            <div class="button"> <a href="index.php?action=updatePost&ticket_id=<?php echo $ticket->id(); ?> ">Modifier ce chapitre</a></div>
-            <div class="button"> <a href="index.php?action=deletePost&ticket_id=<?php echo $ticket->id(); ?> ">Supprimer ce chapitre</a></div>
+        <div class="buttonsdash ajustbuttonsdash">
+            <div class="button ajutbutton"> <a href="index.php?action=updatePost&ticket_id=<?php echo $ticket->id(); ?> ">Modifier ce chapitre</a></div>
+            <div class="button ajutbutton"> <a href="index.php?action=deletePost&ticket_id=<?php echo $ticket->id(); ?> ">Supprimer ce chapitre</a></div>
         </div>    
     </div>
 

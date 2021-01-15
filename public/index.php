@@ -1,11 +1,11 @@
 <?php
-session_start();
+session_start(); 
 
 $action = $_GET['action'] ?? 'index';
 
-require '../vendor/autoload.php';
+require '../vendor/autoload.php'; // instanciation des class
 
-$dotenv = Dotenv\Dotenv::createImmutable("../");
+$dotenv = Dotenv\Dotenv::createImmutable("../"); // fichier de configuration
 $dotenv->load();
 
 use Controller\{frontController, AuthController, CommentController, DashboardController};

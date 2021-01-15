@@ -21,7 +21,7 @@
         <p>
             <?php 
             if(strlen($content) > 200) {
-                echo substr ($content, 0, 200);
+                echo substr ($content, 0, 400);
                 ?> <p>[...]</p>
                 <?php
             } else {

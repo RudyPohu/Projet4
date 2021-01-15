@@ -14,7 +14,8 @@
     </h2>
 
     <p>
-    <?php echo nl2br(htmlspecialchars($ticket->contenu())); ?>
+    <?php $content = preg_replace('#<script(.*?)>(.*?)</script>#is', '',$ticket->contenu());
+    echo $content; ?>
     </p>
 </div>
 

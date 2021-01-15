@@ -12,7 +12,8 @@
             <em>le <?php echo $ticket->getDate(); ?></em>
         </h2> 
         <p>
-            <?php echo htmlspecialchars($ticket->contenu()); ?>
+            <?php $content = preg_replace('#<script(.*?)>(.*?)</script>#is', '',$ticket->contenu());
+            echo $content; ?>
         </p>    
     </div>
 </section>
