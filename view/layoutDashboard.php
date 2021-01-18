@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- template des pages backend -->
 
-<html class="fonddashboard">
+<html lang="fr" class="fonddashboard">
     <head>
         <meta charset="utf-8">
         <title><?= $title ?></title>

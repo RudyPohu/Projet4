@@ -10,24 +10,23 @@
 <div class="ticket ticketcomment">
     <h2>
         <?php echo htmlspecialchars($ticket->titre()); ?>
-        </br><em>Publié le <?php echo $ticket->getDate(); ?></em>
+        <br /><em>Publié le <?php echo $ticket->getDate(); ?></em>
     </h2>
 
-    <p>
+    
     <?php $content = preg_replace('#<script(.*?)>(.*?)</script>#is', '',$ticket->contenu());
     echo $content; ?>
-    </p>
+    
 </div>
 
 <h2>Commentaires des lecteurs:</h2>
 
-<section class="comments">
 	<?php
 	foreach($comments as $comment):
 	?>
 
-	<div class="comment">
-		<div class="">
+	<div class="comments">
+
 			<p><strong><?php echo htmlspecialchars($comment->auteur()); ?></strong> le <?php echo ($comment->getDate()); ?></p>
 			<?php if ($comment->reported()) {
 				?> 
@@ -37,50 +36,44 @@
 			else {
 			?>	
 				<p><?php echo nl2br(htmlspecialchars($comment->commentaire())); ?></p>
-			
-			<div class="">
-				<form action='index.php?action=storeReported' method='POST'>
-					<p>
-						<input type="hidden" name="id" value="<?= $comment->id() ?>">
-						<input type="hidden" name="id_ticket" value="<?= $ticket->id() ?>">
-						<input class="reported" type='submit' value='Signaler ce commentaire'>
-					</p>
-				</form>
-			</div>
-			<?php
-			}
-			?>
-			
+
+			<form action='index.php?action=storeReported' method='POST'>
+				<p>
+					<input type="hidden" name="id" value="<?= $comment->id() ?>">
+					<input type="hidden" name="id_ticket" value="<?= $ticket->id() ?>">
+					<input class="reported" type='submit' value='Signaler ce commentaire'>
+				</p>
+			</form>
+
+		<?php
+		}
+		?>
 		</div>
 
 		<?php
 		endforeach;
 		?>
-	</div>
-</section>
 
 		<!-- formulaire pour laisser un commentaire -->
-<div class="formulaire">
+
+<form class="formulaire" action="index.php?action=storeComment" method="post" >
 	<h2>Laisser vous aussi votre commentaire :</h2>
+	<?php
+	if(isset($_SESSION['errors'])) {
+		echo $_SESSION['errors'];
+		unset($_SESSION['errors']);
+	}
+	?>
+    <p>
+        <label id="auteur">Votre pseudo:</label> : <br />
+        <input class="pseudo" type="text" name="auteur" /><br /><br />
+        <label id="commentaire">Votre message:</label> : <br />
+        <textarea class="texte" name="commentaire" rows="6" cols="25"></textarea><br />
+        <input type="hidden" name="id_ticket" value="<?php echo $ticket->id(); ?>" /><br />
 
-	<form action="index.php?action=storeComment" method="post" >
-		<?php
-		if(isset($_SESSION['errors'])) {
-			echo $_SESSION['errors'];
-			unset($_SESSION['errors']);
-		}
-		?>
-        <p>
-	        <label for="auteur">Votre pseudo:</label> : <br />
-	        <input class="pseudo" type="text" name="auteur" /><br /><br />
-	        <label for="commentaire">Votre message:</label> : <br />
-	        <textarea class="texte" name="commentaire" rows="6" cols="25"></textarea><br />
-	        <input type="hidden" name="id_ticket" value="<?php echo $ticket->id(); ?>" /><br />
-
-	        <input class="button buttonform" type="submit" value="Envoyer" />
-		</p>
-	</form> 
-</div> 
+        <input class="button buttonform" type="submit" value="Envoyer" />
+	</p>
+</form> 
 	
 
 <?php

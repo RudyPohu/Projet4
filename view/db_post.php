@@ -15,9 +15,8 @@
             <?php echo htmlspecialchars($ticket->titre()); ?>
             <em>le <?php echo $ticket->getDate(); ?></em>
         </h2> 
-        <p>
+            
             <?php echo $content; ?>
-        </p> 
         
         <div class="buttonsdash ajustbuttonsdash">
             <div class="button ajutbutton"> <a href="index.php?action=updatePost&ticket_id=<?php echo $ticket->id(); ?> ">Modifier ce chapitre</a></div>
